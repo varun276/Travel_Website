@@ -1,0 +1,991 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f8f2f4;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+.componentSpacing {
+    padding: 4rem 10rem;
+}
+
+.componentSpacing1 {
+    padding: 2rem 10rem;
+}
+
+.miniPad {
+    padding: 1rem;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid--2 {
+    display: grid;
+    grid-template-columns: 0.3fr 0.5fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+.grid--3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: cemter;
+    text-align: center;
+}
+
+.dflex-col-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.dflex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dflex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* CSS */
+.navLOGO img {
+    margin-right: 4rem;
+}
+
+.lists li {
+    padding-right: 4rem;
+    list-style-type: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lists a {
+    text-decoration: none;
+}
+
+.line {
+    height: 0.2rem;
+    width: 2rem;
+    background-color: coral;
+}
+
+.buttons {
+    padding: 1.5rem 4rem;
+    border-radius: 40px;
+    border: none;
+    border: 0.2px solid coral;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: coral;
+    gap: 5px;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 8.5rem;
+    font-size: 70px;
+    padding: 4rem 0;
+}
+
+.para p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 3rem;
+}
+
+.events {
+    padding: 1.5rem;
+    border-radius: 40px;
+    border: none;
+    background-color: #eceaeb;
+}
+
+.WL {
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.where {
+    padding-right: 2rem;
+}
+
+.where p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.date p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.events {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.location img {
+    width: auto;
+    height: 2rem;
+    margin: 0.4rem 4rem 0 0;
+    margin-left: 2rem;
+}
+
+.day img {
+    width: auto;
+    height: 2rem;
+    margin: 0.4rem 4rem 0 0;
+    margin-left: 2rem;
+}
+
+.cat {
+    padding: 10rem 0;
+}
+
+.catHeading h2 {
+    font-size: 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 3rem;
+}
+
+.catHeading p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 5rem;
+}
+
+.swipe1 {
+    background-color: white;
+    padding: 1.5rem 1.8rem;
+    border-radius: 40px;
+}
+
+.swipe2 {
+    background-color: black;
+    padding: 1.53rem 1.8rem;
+    border-radius: 40px;
+    margin-left: 1.5rem;
+}
+
+.nature img {
+    padding-bottom: 2rem;
+}
+
+.nature p {
+    margin-left: 4rem;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head1 h3 {
+    padding: 4rem 0 1.5rem 0;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3.5px;
+    color: coral;
+}
+
+.head2 h3 {
+    font-size: 50px;
+    line-height: 7rem;
+    letter-spacing: 2px;
+}
+
+.paragraph p {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2rem 0 5rem 0;
+}
+
+.number {
+    background-color: rgb(253, 246, 246);
+    border: none;
+    border-radius: 30px;
+    ;
+    padding: 2rem 0;
+    margin-right: 1.5rem;
+}
+
+.number h3 {
+    color: coral;
+    padding-bottom: 1.5rem;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.number p {
+    font-size: 18px;
+    color: rgb(143, 143, 143);
+}
+
+.destinationHeading h2 {
+    font-size: 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 3rem;
+}
+
+.desHead h3 {
+    padding-top: 1.5rem;
+    font-size: 20px;
+}
+
+.desHead p {
+    font-size: 15px;
+}
+
+.last {
+    padding-top: 2rem;
+}
+
+.last button {
+    margin-right: 2rem;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rate h3 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rate p {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card button {
+    padding: 0.7rem 1.6rem;
+    border-radius: 30px;
+}
+
+.card {
+    background-color: white;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.black button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1.1rem 2rem;
+    border-radius: 30px;
+}
+
+.topHeading h2 {
+    font-size: 50px;
+}
+
+.topHeading p {
+    font-size: 16px;
+    padding-bottom: 3rem;
+}
+
+.places li {
+    list-style-type: none;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+}
+
+.places button {
+    color: black;
+    border: 1.7px solid black;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.london button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+}
+
+.image1 img {
+    height: 21rem;
+    width: auto;
+    padding-bottom: 2rem;
+}
+
+.image2 img {
+    height: 21rem;
+    width: auto;
+    padding-bottom: 2rem;
+}
+
+.image3 img {
+    height: 40rem;
+    width: auto;
+}
+
+.image4 img {
+    height: 20rem;
+    width: auto;
+    padding-bottom: 2rem;
+}
+
+.image5 img {
+    height: 20rem;
+    width: auto;
+    padding-right: 2rem;
+}
+
+.image6 img {
+    height: 20rem;
+    width: auto;
+}
+
+.visit {
+    padding: 0 15rem;
+}
+
+.headLine h3 {
+    font-size: 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 5rem;
+}
+
+.lines p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 3rem;
+}
+
+.name {
+    padding-left: 2rem;
+}
+
+.name h3 {
+    padding-top: 1rem;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name p {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.email {
+    background-image: url(./assests/images/yellow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 40px;
+    background-size: cover;
+    background-color: #a3aaae;
+    min-height: 40vh;
+    width: 100%;
+}
+
+.emailHead h3 {
+    padding: 3rem 0;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.emailHead p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.column1 h3 {
+    font-size: 17px;
+    padding-bottom: 2rem;
+}
+
+.column1 li {
+    font-size: 16px;
+    list-style-type: none;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+}
+
+.column li {
+    font-size: 16px;
+    list-style-type: none;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+}
+
+.column h3 {
+    font-size: 17px;
+    padding-bottom: 2rem;
+}
+
+.socialicons li {
+    list-style-type: none;
+    padding-right: 1.5rem;
+}
+
+.social p {
+    padding: 3rem 0;
+    font-size: 16px;
+}
+.socialicons img{
+    height:2rem;
+    width:auto;
+}
+.email img{
+    height:4rem;
+    width:auto;
+}
+
+/* ::: RESPONSIVE DESIGN DEVICE SIZES::: */
+/* for Responsive Target the Row Code (display:grid) */
+
+/* Small devices(landscape phones, upto 576px and below) */
+@media (width <=576px) {
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .componentSpacing {
+        padding: 2rem 1.5rem;
+    }
+
+    .componentSpacing1 {
+        padding: 2rem;
+    }
+
+    .navLOGO img {
+        margin-right: 1rem;
+    }
+
+    .lists li {
+        padding-right: 1rem;
+        font-size: 10px;
+    }
+
+    .buttons {
+        padding: 1rem;
+        gap: 5px;
+    }
+
+    h1 {
+        line-height: 5rem;
+        font-size: 40px;
+        padding: 0;
+    }
+
+    .where {
+        padding-right: 2rem;
+    }
+
+    .where p {
+        font-size: 12px;
+    }
+
+    .date p {
+        font-size: 12px;
+    }
+
+    .location img {
+        margin: 0.5rem 2rem 0.3rem 0;
+        margin-left: 2rem;
+    }
+
+    .day img {
+        margin: 0.5rem 2rem 0 0;
+        margin-left: 2rem;
+    }
+
+    .cat {
+        padding: 2rem;
+    }
+
+    .swipe1 {
+        background-color: white;
+        padding: 1.5rem 1.8rem;
+        border-radius: 40px;
+    }
+
+    .swipe2 {
+        background-color: black;
+        padding: 1.53rem 1.8rem;
+        border-radius: 40px;
+        margin-left: 0;
+    }
+    .nature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    .visit {
+        padding: 1.5rem;
+        gap:3rem;
+    }
+    .places{
+        display:flex;
+        flex-direction: column;
+    }
+    .email p{
+        font-size: 16px;
+    }
+    .email img{
+        height:3.3rem;
+        width:auto;
+    }
+    .contact{
+        display:flex;
+        flex-direction: column;
+    }
+    .socialicons img{
+        height:2rem;
+        width:auto;
+    }
+    .social{
+        padding-bottom:4rem;
+    }
+    .column1{
+        padding-bottom:3rem;
+    }
+    .column{
+        padding-bottom:3rem;
+    }
+}
+
+/* Medium devices(tablets, upto 768px and above) */
+@media (width >=577px) and (width <=768px) { 
+
+        .grid-1,
+        .grid-2,
+        .grid-3,
+        .grid-4 {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    
+        .componentSpacing {
+            padding:3rem;
+        }
+    
+        .componentSpacing1 {
+            padding:3rem;
+        }
+    
+        .navLOGO img {
+            margin-right:3rem;
+        }
+    
+        .lists li {
+            padding-right: 1rem;
+            font-size: 10px;
+        }
+    
+        .buttons {
+            padding: 1rem;
+            gap: 5px;
+        }
+    
+        h1 {
+            line-height: 5rem;
+            font-size: 40px;
+            padding: 0;
+        }
+    
+        .where {
+            padding-right: 2rem;
+        }
+    
+        .where p {
+            font-size: 12px;
+        }
+    
+        .date p {
+            font-size: 12px;
+        }
+    
+        .location img {
+            margin: 0.5rem 2rem 0.3rem 0;
+            margin-left: 2rem;
+        }
+    
+        .day img {
+            margin: 0.5rem 2rem 0 0;
+            margin-left: 2rem;
+        }
+    
+        .cat {
+            padding: 2rem;
+        }
+    
+        .swipe1 {
+            background-color: white;
+            padding: 1.5rem 1.8rem;
+            border-radius: 40px;
+        }
+    
+        .swipe2 {
+            background-color: black;
+            padding: 1.53rem 1.8rem;
+            border-radius: 40px;
+            margin-left: 0;
+        }
+        .nature {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 2rem;
+        }
+        .visit {
+            padding: 1.5rem;
+            gap:3rem;
+        }
+        .places{
+            display:flex;
+            flex-direction: column;
+        }
+        .email p{
+            font-size: 16px;
+        }
+        .email img{
+            height:3.3rem;
+            width:auto;
+        }
+        .contact{
+            display:flex;
+            flex-direction: column;
+        }
+        .social{
+            padding-bottom:4rem;
+        }
+        .column1{
+            padding-bottom:3rem;
+        }
+        .socialicons img{
+            height:2rem;
+            width:auto;
+        }
+        
+    }
+    
+
+/* Large devices(Laptop, upto 992px and above) */
+@media (width>=769px) and (width <=992px) {
+    
+    .componentSpacing {
+        padding:3rem;
+    }
+
+    .componentSpacing1 {
+        padding:3rem;
+    }
+
+    .navLOGO img {
+        margin-right:4rem;
+    }
+    .lists a{
+         font-size:16px;
+    }
+    .lists li {
+        padding-right: 3rem;
+        font-size: 10px;
+    }
+
+    .buttons {
+        padding: 1rem;
+        gap: 5px;
+    }
+
+    h1 {
+        line-height: 5rem;
+        font-size: 40px;
+        padding: 0;
+    }
+
+    .where {
+        padding-right: 2rem;
+    }
+
+    .where p {
+        font-size: 12px;
+    }
+
+    .date p {
+        font-size: 12px;
+    }
+
+    .location img {
+        margin: 0.5rem 2rem 0.3rem 0;
+        margin-left: 2rem;
+    }
+
+    .day img {
+        margin: 0.5rem 2rem 0 0;
+        margin-left: 2rem;
+    }
+
+    .cat {
+        padding: 2rem;
+    }
+
+    .swipe1 {
+        background-color: white;
+        padding: 1.5rem 1.8rem;
+        border-radius: 40px;
+    }
+
+    .swipe2 {
+        background-color: black;
+        padding: 1.53rem 1.8rem;
+        border-radius: 40px;
+        margin-left: 0;
+    }
+    .nature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    .visit {
+        padding: 1.5rem;
+        gap:3rem;
+    }
+    .places{
+        display:flex;
+        flex-direction: column;
+    }
+    .email p{
+        font-size: 16px;
+    }
+    .email img{
+        height:3.3rem;
+        width:auto;
+    }
+    .contact{
+        display:flex;
+        flex-direction: column;
+    }
+    .cards{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social{
+        padding-bottom:4rem;
+    }
+    .column1{
+        padding-bottom:3rem;
+    }
+    .socialicons img{
+        height:2rem;
+        width:auto;
+    }
+}
+
+/* X-Large devices (large desktop, upto 1200px and above) */
+@media (width>=993px) and (width<=1200px) {
+    .componentSpacing {
+        padding:3rem;
+    }
+
+    .componentSpacing1 {
+        padding:3rem;
+    }
+
+    .navLOGO img {
+        margin-right:4rem;
+    }
+    .lists a{
+         font-size:16px;
+    }
+    .lists li {
+        padding-right: 3rem;
+        font-size: 10px;
+    }
+
+    .buttons {
+        padding: 1rem;
+        gap: 5px;
+    }
+
+    h1 {
+        line-height: 5rem;
+        font-size: 40px;
+        padding: 0;
+    }
+
+    .where {
+        padding-right: 2rem;
+    }
+
+    .where p {
+        font-size: 12px;
+    }
+
+    .date p {
+        font-size: 12px;
+    }
+
+    .location img {
+        margin: 0.5rem 2rem 0.3rem 0;
+        margin-left: 2rem;
+    }
+
+    .day img {
+        margin: 0.5rem 2rem 0 0;
+        margin-left: 2rem;
+    }
+
+    .cat {
+        padding: 2rem;
+    }
+
+    .swipe1 {
+        background-color: white;
+        padding: 1.5rem 1.8rem;
+        border-radius: 40px;
+    }
+
+    .swipe2 {
+        background-color: black;
+        padding: 1.53rem 1.8rem;
+        border-radius: 40px;
+        margin-left: 0;
+    }
+    .nature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    .visit {
+        padding: 1.5rem;
+        gap:3rem;
+    }
+    .places{
+        display:flex;
+        flex-direction: column;
+    }
+    .email p{
+        font-size: 16px;
+    }
+    .email img{
+        height:3.3rem;
+        width:auto;
+    }
+    .contact{
+        display:flex;
+        flex-direction: column;
+    }
+    .cards{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social{
+        padding-bottom:4rem;
+    }
+    .column1{
+        padding-bottom:3rem;
+    }
+    .socialicons img{
+        height:2rem;
+        width:auto;
+    }
+}
+
+/* XX-Large devices (larger desktops, upto 1400px and above) */
+@media (width>=1200px) {}
